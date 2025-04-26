@@ -48,6 +48,8 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.46f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/current_score.cs" />
+    <Compile Include="Assets/Score.cs" />
     <Compile Include="Assets/MoveLeft.cs" />
     <Compile Include="Assets/Spawner.cs" />
     <Compile Include="Assets/PlayerController.cs" />
