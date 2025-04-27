@@ -9,7 +9,7 @@ public class current_score : MonoBehaviour
 
     private Dictionary<int, Image> Mapped_ui_numbers = new();
 
-    private static int Players_score;
+    private int Players_score;
     [SerializeField] private List<Image> numbers_ui;
 
 
@@ -34,28 +34,26 @@ public class current_score : MonoBehaviour
 
     }
 
-    public int SeperateDigits(int userscore)
+    public List<Image> SeperateDigits()
     {
-        int score = playerScore;
+        string scoreStr = Players_score.ToString();
 
-        while (score > 0)
+        List<Image> hold_my_images = new();
+
+        foreach (char c in scoreStr)
         {
-            int lastDigit = score % 10;  // Grab the last digit
-            score /= 10;                 // Remove the last digit
-
-            Image digitImage = Mapped_ui_numbers[lastDigit];
+            int digit = c - '0';  // Convert char '5' → int 5
+            Image digitImage = Mapped_ui_numbers[digit];
             // Create and show this digit image
+            hold_my_images.Add(digitImage);
         }
-        return 0;
-
-
+        return hold_my_images;
     }
     private void Populate_dictionary()
     {
         for (int i = 0; i < 10; i += 1)
         {
             Mapped_ui_numbers.Add(i, numbers_ui[i]);
-
         }
 
     }

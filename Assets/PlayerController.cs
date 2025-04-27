@@ -17,4 +17,12 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = Vector2.up * flapForce;
         }
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Something hit me!");
+        // collsion with anything means destruction!
+        Destroy(gameObject);
+        // call function to bring up end game stuff
+    }
 }

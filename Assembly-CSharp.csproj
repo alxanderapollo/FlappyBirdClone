@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/current_score.cs" />
+    <Compile Include="Assets/PlayerHealth.cs" />
     <Compile Include="Assets/Score.cs" />
     <Compile Include="Assets/MoveLeft.cs" />
     <Compile Include="Assets/Spawner.cs" />
