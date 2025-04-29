@@ -25,10 +25,10 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Something hit me!");
-        // collsion with anything means destruction!
+
         Destroy(gameObject);
-        // call function to bring up end game stuff
-        Debug.Log("Final Score: " + Score.score);
+        Time.timeScale = 0;
+        GameOverManager gameOverManager = FindObjectOfType<GameOverManager>();
+        gameOverManager.ShowGameOver();  // Trigger the GameOver screen
     }
 }
