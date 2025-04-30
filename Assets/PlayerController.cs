@@ -2,16 +2,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float flyForce = 5f;
+    public float flyForce = 6f;
     [SerializeField] private float _rotationSpeed = 10f;
 
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip crashSound;
     [SerializeField] private AudioClip jumpSound;
     private Rigidbody2D rb;
-
-    private bool hasCrashed = false;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

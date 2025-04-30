@@ -50,15 +50,12 @@
   <ItemGroup>
     <Compile Include="Assets/EndGameManager.cs" />
     <Compile Include="Assets/current_score.cs" />
-    <Compile Include="Assets/PlayerHealth.cs" />
     <Compile Include="Assets/GameOverManager.cs" />
     <Compile Include="Assets/Score.cs" />
     <Compile Include="Assets/MoveLeft.cs" />
     <Compile Include="Assets/move_mountains.cs" />
     <Compile Include="Assets/mountain_ground_spawner.cs" />
-    <Compile Include="Assets/Spawner.cs" />
     <Compile Include="Assets/PlayerController.cs" />
-    <Compile Include="Assets/HighScore.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
